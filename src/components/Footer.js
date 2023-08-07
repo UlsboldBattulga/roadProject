@@ -2,73 +2,70 @@ import React from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import RefreshLink from './RefreshLink';
+const handleClick = () => {
+  // Perform any additional actions if needed before refreshing the page
+  window.location.reload();
+};
 
 function Footer() {
   return (
-    <div className='footer-container'>
-      <section className='footer-subscription'>
-        <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
-        </p>
-        <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
-        </p>
-        <div className='input-areas'>
-          <form>
-            <input
-              className='footer-input'
-              name='email'
-              type='email'
-              placeholder='Your Email'
-            />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
-          </form>
-        </div>
-      </section>
-      <div class='footer-links'>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
+    <div className='footer-container bottom-0'>
+
+      <div class='footer-links flex gap-16'>
+        <div className='footer-link-wrapper flex gap-16'>
+          <div className='text-white flex flex-col gap-3'>
+            <a href='/about' >
+              <h2 className='text-[#ff5f13]'>Бидний тухай</h2>
+            </a>
+            <a href='/activity'>Үйл ажиллагаа</a>
+            <a href='/workdone'>Гүйцэтгэсэн ажил</a>
+            <a href='/contact'>Холбоо барих</a>
           </div>
-          <div class='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
+          <div className='text-white flex flex-col gap-3'>
+            <a href='contact'>
+              <h2 className='text-[#ff5f13]'>Холбоо барих</h2>
+            </a>
+            <a href='/contact'>Утас: (+976) 8888-8888</a>
+            <a href='/contact'>Email: autozam@gmail.com</a>
+            <a href='/contact'>Факс: ---------</a>
           </div>
         </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
+        <div className='footer-link-wrapper flex gap-16'>
+          <div className='text-white flex flex-col gap-3'>
+            <a href='contact'>
+              <h2 className='text-[#ff5f13]'>Хаяг</h2>
+            </a>
+            <a href='/contact'>Улаанбаатар хот</a>
+            <a href='/contact'>Баян зүрх дүүрэг</a>
+            <a href='/contact'>Somang Plaza</a>
+            <a href='/contact'>6 давхар 601 тоот</a>
           </div>
-          <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+          <div className='text-white flex flex-col gap-3'>
+            <h2 className='text-[#ff5f13]'>Social Media</h2>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              Facebook
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+              Youtube
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+              Twitter
+            </a>
           </div>
         </div>
       </div>
       <section class='social-media'>
-        <div class='social-media-wrap'>
+        <div class='social-media-wrap '>
           <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
-            </Link>
+            <a href='/' className=' text-[#ff5f13] text-[24px]'>
+              АвтоЗам ХХК
+            </a>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>Бүх эрх хуулиар хамгаалагдсан </small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
@@ -113,7 +110,7 @@ function Footer() {
           </div>
         </div>
       </section>
-    </div>
+    </div >
   );
 }
 
