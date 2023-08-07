@@ -7,7 +7,7 @@ import email from "../images/email.png";
 function Contact() {
     return (
         <div className=" w-full bg-[#f9f9f9]">
-            <div className=" grid lg:grid-cols-3 w-full sm:w-[380px] lg:w-full mx-auto px-6 md:px-0 ">
+            <div className=" grid lg:grid-cols-3 w-full sm:w-[380px] lg:w-full mx-auto px-6 md:px-0 pb-10">
                 <div className="flex items-center justify-center py-20 px-10">
                     <img src={telephone} className="w-[44px] mr-5" />
                     <div>
