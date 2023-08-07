@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Cards() {
   return (
-    <div className='cards '>
+    <div className=' p-4 flex flex-col '>
       <p className='text-[#ff5f13] mx-auto w-full text-center md:text-[24px]'>Төсөл хөтөлбөр</p>
-      <h1 className='text-[#2c234d] text-[24px] md:text-[32px]'>Гүйцэтгэсэн ажил</h1>
+      <h1 className='text-[#2c234d] text-[24px] md:text-[32px] w-full'>Гүйцэтгэсэн ажил</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items'>
+          <ul className='cards__items w-full grid justify-center items-center md:grid-cols-2'>
             <CardItem
               src='images/uuliin-zam.jpg'
               text='Жишээ тайлбар тескт энд байрлана'
